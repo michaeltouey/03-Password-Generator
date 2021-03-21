@@ -7,26 +7,7 @@ var upperChar = ["EGAFXZBWUH"];
 var ranNum = ["123456789"];
 var specChar = ["/`~!@$^%"];
 
-// get random index from array of lowerChar
-var indexL = Math.floor(Math.random() * lowerChar.length);
-var computerChoice = lowerChar[indexL];
-
-// random index from upperChar
-var indexU = Math.floor(Math.random() * upperChar.length);
-var computerChoice = upperChar[indexU];
-
-// random index from ranNum
-var indexR = Math.floor(Math.random() * ranNum.length);
-var computerChoice = ranNum[indexR];
-
-// random index from specChar
-var indexS = Math.floor(Math.random() * specChar.length);
-var computerChoice = specChar[indexS];
-
-
 // create generate password function
-// majority of code will be in this function
-// use confirm and prompts in here
 function generatePassword() {
   var possibilites = "";
   var password = "";
@@ -37,7 +18,7 @@ function generatePassword() {
   //check if the length is an actual number
   if (isNaN(passLength)) {
     //send message
-    alert("hey this is not a number ...");
+    alert("Please enter a number ...");
 
     //exit
     return;
@@ -46,7 +27,7 @@ function generatePassword() {
   //check if the length is greater than 8
   if (passLength < 8) {
     //send message
-    alert("hey this is too small ...");
+    alert("Please enter a valid number ...");
 
     //exit
     return;
@@ -54,7 +35,7 @@ function generatePassword() {
   //check if the length is less than 128
   if (passLength > 128) {
     //send message
-    alert("hey this is too big ...");
+    alert("Please enter a number that is less than 128 ...");
 
     //exit
     return;
