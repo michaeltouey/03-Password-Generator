@@ -9,9 +9,6 @@ https://michaeltouey.github.io/homework3/
 
 ## Screenshot
 
-    ```md
-    ![alt text] (assets/images/screenshot.png) 
-    ```
 ![image](https://user-images.githubusercontent.com/79162410/111926901-130f8600-8a85-11eb-952a-286ae9f259ed.png)
 
 
